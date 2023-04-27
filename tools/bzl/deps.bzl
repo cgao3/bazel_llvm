@@ -121,3 +121,13 @@ filegroup(
       "https://github.com/llvm/llvm-project/releases/download/llvmorg-13.0.0/clang+llvm-13.0.0-x86_64-linux-gnu-ubuntu-20.04.tar.xz"
     ],
   )
+
+  http_archive(
+    name="clang-llvm-12.0.1-x86_64-linux-gnu-ubuntu-16.04",
+    build_file="@llvm//:llvm_linux.BUILD",
+    sha256="6b3cc55d3ef413be79785c4dc02828ab3bd6b887872b143e3091692fc6acefe7",
+    strip_prefix="clang+llvm-12.0.1-x86_64-linux-gnu-ubuntu-",
+    urls=[
+      "https://github.com/llvm/llvm-project/releases/download/llvmorg-12.0.1/clang+llvm-12.0.1-x86_64-linux-gnu-ubuntu-16.04.tar.xz"
+    ],
+  )

@@ -113,3 +113,14 @@ cc_test(
     ],
     deps = ["@llvm//13.0.0"],
 )
+
+cc_test(
+    name = "hello-world-12.0.1",
+    srcs = ["hello-world.cc"],
+    copts = [
+        "-std=c++14",
+        "-fno-exceptions",
+        "-fno-rtti",
+    ],
+    deps = ["@llvm//12.0.1"],
+)
